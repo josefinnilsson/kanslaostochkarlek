@@ -1,5 +1,10 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import url('https://fonts.googleapis.com/css?family=Karla|Rubik');
+
+$background-color: rgb(240,240,240);
+$accent-color: rgb(155,1,1);
+$accent-color-hover: rgb(119,1,1);
 
 @mixin box_sizing {
   -moz-box-sizing:    border-box;
@@ -8,6 +13,7 @@
 }
 
 body {
+  background-color: $background-color !important;
   margin: 0;
   border: 0;
   vertical-align: baseline;
@@ -17,16 +23,24 @@ body {
   flex-direction: column;
 }
 
-h1{
+p, label, input {
+  font-family: 'Karla', sans-serif;
+}
+
+h1 {
+    font-family: 'Rubik', sans-serif;
     font-weight: 900;
     font-size: 6em;
     text-align: center;
     -webkit-font-smoothing: antialiased;
 }
 
-btn{
-  font-weight: 600;
-  color: #212121;
+a {
+  color: $accent-color !important;
+}
+
+a:hover {
+  color: $accent-color-hover !important;
 }
 
 footer {
@@ -53,6 +67,17 @@ button, input[type="submit"] {
   border: none;
   float: center; 
   height: 3em !important;
+  background-color: $accent-color;
+  color: white;
+}
+
+button, input[type="submit"]:hover {
+  background-color: $accent-color-hover;
+}
+
+input[type="checkbox"] {
+  background-color: red !important;
+  color: red !important;
 }
 
 label.form-check-label {
