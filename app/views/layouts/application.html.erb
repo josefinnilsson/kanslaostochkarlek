@@ -9,6 +9,27 @@
   </head>
 
   <body>
-    <%= yield %>
+    <% if logged_in? %>
+    <%= render 'layouts/header' %>
+    <% end %>
+    <% flash.each do |message_type, message| %>
+    <script>
+      Messenger().post({
+        message: '<%= message %>',
+        hideAfter: 3,
+        hideOnNavigate: true
+      });
+    </script>
+    <% end %>
+    <main>
+      <% if logged_in? %>
+      <div class="main">
+      <%= yield %>
+      </div>
+      <% else %>
+      <%= yield %>
+      <% end %>
+    </main>
+    <%= render 'layouts/footer' %>
   </body>
 </html>

@@ -1,0 +1,6 @@
+<% if !logged_in? %>
+  <%= render "sessions/new" %>
+  <% end %>
+  <% if logged_in? %>
+    <h1>Hello!</h1>
+  <% end %>
