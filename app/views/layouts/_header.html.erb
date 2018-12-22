@@ -1,0 +1,10 @@
+<header>
+    <nav class="menu">
+        <%= link_to "Känsla ost och kärlek", root_url%>
+        <% if logged_in? %>
+            <%= link_to "My recipes" %>
+            <%= link_to "New recipe" %>
+            <%= link_to "Log out", logout_path, method: "delete" %>
+        <% end %>
+    </nav>
+</header>

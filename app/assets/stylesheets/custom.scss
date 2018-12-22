@@ -1,0 +1,60 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+@mixin box_sizing {
+  -moz-box-sizing:    border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing:         border-box;
+}
+
+body {
+  margin: 0;
+  border: 0;
+  vertical-align: baseline;
+  padding: 0;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+h1{
+    font-weight: 900;
+    font-size: 6em;
+    text-align: center;
+    -webkit-font-smoothing: antialiased;
+}
+
+btn{
+  font-weight: 600;
+  color: #212121;
+}
+
+footer {
+  width: 100%;
+  padding: 1em;
+  p {
+    text-align: center;
+  }
+}
+
+form {
+  font-weight: 400;
+  margin: 0 auto;
+  position: relative;
+  width: 500px;
+  margin: 50px auto 100px auto;
+}
+
+
+button, input[type="submit"] {
+  width: 100%;
+  color: black;
+  padding: 5px;
+  border: none;
+  float: center; 
+  height: 3em !important;
+}
+
+label.form-check-label {
+  padding-left: 1%;
+}
