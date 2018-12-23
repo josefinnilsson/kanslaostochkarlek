@@ -1,5 +1,3 @@
-@import "bootstrap-sprockets";
-@import "bootstrap";
 @import url('https://fonts.googleapis.com/css?family=Karla|Rubik');
 
 $background-color: rgb(240,240,240);
@@ -25,15 +23,26 @@ body {
 
 p, label, input {
   font-family: 'Karla', sans-serif;
+  font-size: 1em !important;
+  line-height: 1.25em !important;
 }
 
 h1 {
-    font-family: 'Rubik', sans-serif;
-    font-weight: 900;
-    font-size: 6em;
-    text-align: center;
-    -webkit-font-smoothing: antialiased;
+  font-family: 'Rubik', sans-serif !important;
+  font-size: 3em !important;
+  line-height: 1.05em !important;
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
 }
+
+h2 {
+  font-family: 'Rubik', sans-serif !important;
+  font-size: 2.25em !important;
+  line-height: 1.25em !important;
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+}
+
 
 a {
   color: $accent-color !important;
@@ -41,6 +50,19 @@ a {
 
 a:hover {
   color: $accent-color-hover !important;
+}
+
+@media only screen and (max-width: 750px) {
+  h1 {
+    font-size: 2em !important;
+    line-height: 1.25 !important;
+  }
+
+  h2 {
+    font-size: 1.625 !important;
+    line-height: 1.15384615 !important;
+  }
+
 }
 
 footer {
