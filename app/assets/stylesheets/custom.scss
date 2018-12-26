@@ -22,9 +22,9 @@ body {
   flex-direction: column;
 }
 
-p, label, input {
+p, label, input, a {
   font-family: 'Karla', sans-serif;
-  font-size: 1em !important;
+  font-size: 1.5 em !important;
   line-height: 1.25em !important;
 }
 
@@ -50,7 +50,7 @@ a {
 }
 
 a:hover {
-  color: $accent-color-hover !important;
+  color: $accent-color-hover;
 }
 
 @media only screen and (max-width: 750px) {
@@ -130,10 +130,14 @@ header {
   }
 
   a {
-    color: $accent-color !important;
+    color: black !important;
     font-size: 1.25em;
     padding-left: 1%;
     padding-right: 1%;
+  }
+
+  a:hover {
+    color: black !important;
   }
 }
 
