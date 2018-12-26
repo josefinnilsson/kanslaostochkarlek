@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Karla|Rubik');
 
-$background-color: rgb(240,240,240);
+$background-color: rgb(245,245,245);
 $accent-color: rgb(155,1,1);
 $accent-color-hover: rgb(119,1,1);
+$menu-color: rgb(237,237,237);
 
 @mixin box_sizing {
   -moz-box-sizing:    border-box;
@@ -104,4 +105,40 @@ input[type="checkbox"] {
 
 label.form-check-label {
   padding-left: 1%;
+}
+
+header {
+  background-color: $menu-color;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  padding: 1em;
+  align-items: center;
+  justify-content: center;
+
+  .menu {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    span {
+      margin: 0 1em;
+    }
+  }
+
+  a {
+    color: $accent-color !important;
+    font-size: 1.25em;
+    padding-left: 1%;
+    padding-right: 1%;
+  }
+}
+
+.menu-title a{
+  float: left !important;
+  text-align: left !important;
+  width: auto !important;
 }
