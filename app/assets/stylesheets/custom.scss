@@ -4,6 +4,7 @@ $background-color: rgb(245,245,245);
 $accent-color: rgb(155,1,1);
 $accent-color-hover: rgb(119,1,1);
 $menu-color: rgb(237,237,237);
+$grey-heading: rgb(200,200,200);
 
 @mixin box_sizing {
   -moz-box-sizing:    border-box;
@@ -24,7 +25,7 @@ body {
 
 p, label, input, a {
   font-family: 'Karla', sans-serif;
-  font-size: 1.5 em !important;
+  font-size: 1.25em !important;
   line-height: 1.25em !important;
 }
 
@@ -42,6 +43,13 @@ h2 {
   line-height: 1.25em !important;
   text-align: center;
   -webkit-font-smoothing: antialiased;
+}
+
+h6 {
+  font-family: 'Karla', sans-serif !important;
+  font-size: 1em !important;
+  text-transform: uppercase;
+  color: $grey-heading;
 }
 
 
@@ -71,6 +79,9 @@ footer {
   padding: 1em;
   p {
     text-align: center;
+  }
+  a {
+    font-size: 1em !important;
   }
 }
 
@@ -131,7 +142,6 @@ header {
 
   a {
     color: black !important;
-    font-size: 1.25em;
     padding-left: 1%;
     padding-right: 1%;
   }
@@ -146,3 +156,5 @@ header {
   text-align: left !important;
   width: auto !important;
 }
+
+
