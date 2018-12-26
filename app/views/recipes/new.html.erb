@@ -1,0 +1,10 @@
+<div class="container">
+    <h1>New recipe</h1>
+    <%= simple_form_for(@recipe) do |f| %>
+    <%= f.input :name %>
+    <%= f.input :portions %>
+    <%= f.input :description %>
+    <%= f.hidden_field :user_id, :value => current_user.id %>
+    <%= f.button :submit, "Go", class: "btn-primary" %>
+    <% end %>
+</div>
