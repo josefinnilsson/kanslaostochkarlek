@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   resources :users
+  resources :recipes
   root 'static_pages#home'
   get 'sessions/new'
   get  '/signup',  to: 'users#new'
