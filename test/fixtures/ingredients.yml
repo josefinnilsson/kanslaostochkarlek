@@ -2,6 +2,10 @@
 
 one:
   name: MyString
+  amount: 1
+  measure: MyString
 
 two:
   name: MyString
+  amount: 1
+  measure: MyString
