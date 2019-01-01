@@ -2,7 +2,7 @@
     <nav class="menu">
         <%= link_to "Home", root_url%>
         <% if logged_in? %>
-        <%= link_to "My recipes" %>
+        <%= link_to "My recipes", recipes_path %>
         <%= link_to "New recipe", new_recipe_path %>
         <%= link_to "Log out", logout_path, method: "delete" %>
         <% end %>
