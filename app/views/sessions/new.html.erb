@@ -1,0 +1,10 @@
+<h1>Log in</h1>
+
+<div class="row">
+    <%= simple_form_for(:session, url: login_path) do |f| %>
+      <%= f.input :email%>
+      <%= f.input :password%>
+      <%= f.input :remember_me, wrapper: :vertical_boolean, as: :boolean%>
+      <%= f.button :submit, "Go", class: "btn-primary" %>
+    <% end %>
+</div>
