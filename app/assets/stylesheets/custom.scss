@@ -28,6 +28,10 @@ p, label, input {
   line-height: 1.25em !important;
 }
 
+p.center {
+  text-align: center;
+}
+
 h1 {
   font-family: 'Rubik', sans-serif !important;
   font-size: 3em !important;
@@ -79,7 +83,7 @@ form {
   margin: 0 auto;
   position: relative;
   width: 500px;
-  margin: 50px auto 100px auto;
+  margin: 50px auto 50px auto;
 }
 
 
